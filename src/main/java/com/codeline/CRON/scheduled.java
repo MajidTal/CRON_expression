@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class scheduled {
-    @Scheduled(cron = "0 0 8 ? * MON *")
+    @Scheduled(cron = "0 0 3 1 * *")
     public void scheduled() {
         System.out.println("Hello World");
     }
