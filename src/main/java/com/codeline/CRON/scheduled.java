@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 //adding a component
 @Component
 public class scheduled {
-    @Scheduled(cron = "* * * * * *") // CRON expression for running every 5 minutes
+    @Scheduled(cron = "0 */5 * * * *") // CRON expression for running every 5 minutes
     public void scheduled() {
         System.out.println("Hello World");
     }
